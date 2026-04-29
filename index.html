@@ -1,27 +1,24 @@
-<h1>TEST WORKING</h1>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zeke the Wonder Dog | Data Science Portfolio</title>
+  <title>Megha Chaudhari | Data Science Portfolio</title>
 
-  <!-- Base styles always loaded -->
+  <!-- Base styles -->
   <link rel="stylesheet" href="css/base.css" />
-
-  <!-- Theme stylesheet — controlled by `theme` in portfolio_config.yaml -->
   <link rel="stylesheet" href="css/themes/msu-dark.css" />
 </head>
+
 <body>
 
   <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="header-inner">
       <div class="header-name">Megha Chaudhari</div>
-      <div class="header-tagline">Aspiring Data Scientist | MSU Student | Good Girl</div>
+      <div class="header-tagline">Aspiring Data Scientist | MSU Student</div>
     </div>
 
-    <!-- Navigation bar -->
     <nav class="site-nav">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -29,206 +26,109 @@
     </nav>
   </header>
 
-  <!-- ===== Main content (filled in by child templates) ===== -->
   <main class="site-main">
-    
 
-<!-- ===== About section ===== -->
-<section id="about" class="section about-section">
-  <h2>About Me</h2>
-  <div class="about-text"><p>I’m a data science student at Michigan State University who enjoys turning data into clear and simple insights. 
-I like working with tools like Python, Pandas, and data visualization to understand real-world problems. 
-My goal is to make complex data easy for anyone to understand and use. I have worked on projects involving 
-data analysis, prediction, and storytelling through visuals. Outside of class, I am always looking for new ways 
-to build my skills and apply data science to meaningful problems.</p></div>
-</section>
-
-<!-- ===== Projects section ===== -->
-<section id="projects" class="section projects-section">
-  <h2>Projects</h2>
-
-  <div class="project-grid">
-    
-    <article class="project-card">
-
-      <!-- Project thumbnail image -->
-      <div class="project-image-wrapper">
-        <img
-          src="img/placeholder_project_1.png"
-          alt="Thumbnail for Optimal Nap Spot Prediction Across Campus"
-          class="project-image"
-        />
+    <!-- ===== About ===== -->
+    <section id="about" class="section about-section">
+      <h2>About Me</h2>
+      <div class="about-text">
+        <p>
+          I’m a data science student at Michigan State University who enjoys turning data into clear and simple insights.
+          I like working with Python, Pandas, and visualization tools to understand real-world problems.
+          My goal is to make complex data easy to understand and useful for decision making.
+        </p>
       </div>
+    </section>
 
-      <div class="project-body">
-        <h3 class="project-title">Optimal Nap Spot Prediction Across Campus</h3>
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section projects-section">
+      <h2>Projects</h2>
 
-        <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Built a model to identify the best nap locations on MSU&#39;s campus based on sunlight exposure, foot traffic, grass quality, and proximity to food smells. Findings have been peer-reviewed by three other dogs and were described as &#34;life-changing&#34; and &#34;very good.&#34;
-</p>
+      <div class="project-grid">
 
-        <!-- Tech stack as pill badges -->
-        <div class="tech-stack">
-          
-          <span class="tech-badge">Python</span>
-          
-          <span class="tech-badge">scikit-learn</span>
-          
-          <span class="tech-badge">pandas</span>
-          
-          <span class="tech-badge">matplotlib</span>
-          
-          <span class="tech-badge">Jupyter Notebooks</span>
-          
-        </div>
+        <!-- ===== AWS PROJECT ===== -->
+        <article class="project-card">
 
-        <!-- Collapsible details (problem / approach / results) -->
-        <details class="project-details">
-          <summary>More details</summary>
-
-          <div class="detail-block">
-            <h4>Problem</h4>
-            <p>Finding a good nap spot is harder than it looks. Campus is large, conditions change throughout the day, and the best patches of sun move. A mascot operating on intuition alone wastes valuable resting time — a problem that affects productivity, morale, and tail-wagging rates across the entire campus community.
-</p>
+          <div class="project-image-wrapper">
+            <img
+              src="img/aws_project.png"
+              alt="AWS NYC 311 Data Pipeline Project"
+              class="project-image"
+            />
           </div>
 
-          <div class="detail-block">
-            <h4>Approach</h4>
-            <p>Collected location data across 47 candidate nap sites over a full academic semester. Features included average daily sunlight (hours), grass softness score (1–10, assessed manually), nearby food-cart proximity, and pedestrian traffic by hour. Trained a gradient boosting classifier to predict a site&#39;s &#34;nap quality&#34; rating and used SHAP values to explain which features mattered most.
-</p>
-          </div>
+          <div class="project-body">
 
-          <div class="detail-block">
-            <h4>Results &amp; Impact</h4>
-            <p>The model achieved 89% accuracy on held-out test sites. Sunlight duration and grass softness were the top two predictive features, while proximity to the student union food court provided a meaningful but secondary boost. A ranked list of top-10 nap sites was distributed to the campus dog community and has since been downloaded 847 times.
-</p>
-          </div>
-        </details>
+            <h3 class="project-title">AWS NYC 311 Data Pipeline & Analysis</h3>
 
-        <!-- Links to the GitHub repo and notebook -->
-        <div class="project-links">
-          
-          <a href="https://github.com/zeke-wonder-dog/nap-spot-predictor" target="_blank" rel="noopener" class="btn btn-repo">
-            View Repo
-          </a>
-          
-          
-          <a href="https://github.com/zeke-wonder-dog/nap-spot-predictor/blob/main/analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
-            View Notebook
-          </a>
-          
-        </div>
+            <p class="project-summary">
+              Built a cloud-based data pipeline using AWS to analyze NYC 311 complaint data.
+              Focused on cleaning data, storing it in S3, and analyzing resolution time patterns.
+            </p>
+
+            <div class="tech-stack">
+              <span class="tech-badge">AWS</span>
+              <span class="tech-badge">S3</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+            </div>
+
+            <details class="project-details">
+              <summary>More details</summary>
+
+              <div class="detail-block">
+                <h4>Problem</h4>
+                <p>
+                  NYC 311 receives many complaints daily and it is hard to understand resolution times and delays.
+                </p>
+              </div>
+
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <p>
+                  Used AWS S3 for storage and Python for cleaning and analyzing large datasets.
+                </p>
+              </div>
+
+              <div class="detail-block">
+                <h4>Results</h4>
+                <p>
+                  Found clear differences in resolution time across agencies and complaint types.
+                </p>
+              </div>
+            </details>
+
+            <div class="project-links">
+              <a href="https://github.com/chaud114/aws-nyc311-chaud114"
+                 target="_blank"
+                 class="btn btn-repo">
+                View Repo
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ===== ADD YOUR HOMEWORK PROJECTS HERE LATER ===== -->
+
       </div>
+    </section>
 
-    </article>
-    
-    <article class="project-card">
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section contact-section">
+      <h2>Contact</h2>
 
-      <!-- Project thumbnail image -->
-      <div class="project-image-wrapper">
-        <img
-          src="img/placeholder_project_2.png"
-          alt="Thumbnail for Spartan Football Crowd Cheer Analysis"
-          class="project-image"
-        />
-      </div>
-
-      <div class="project-body">
-        <h3 class="project-title">Spartan Football Crowd Cheer Analysis</h3>
-
-        <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Analyzed audio and attendance data from Spartan Stadium to understand what game events drive the loudest crowd reactions. Results were used to help the athletics department optimize in-game entertainment and — personally — to determine the exact moments when I should run onto the field for maximum dramatic effect.
-</p>
-
-        <!-- Tech stack as pill badges -->
-        <div class="tech-stack">
-          
-          <span class="tech-badge">Python</span>
-          
-          <span class="tech-badge">pandas</span>
-          
-          <span class="tech-badge">seaborn</span>
-          
-          <span class="tech-badge">Plotly</span>
-          
-          <span class="tech-badge">Jupyter Notebooks</span>
-          
-        </div>
-
-        <!-- Collapsible details (problem / approach / results) -->
-        <details class="project-details">
-          <summary>More details</summary>
-
-          <div class="detail-block">
-            <h4>Problem</h4>
-            <p>Fan energy is contagious, but it is also unpredictable. The athletics department wanted to know which in-game events (touchdowns, turnovers, big defensive stops, walk-up music choices) produced the biggest crowd reactions — and whether the pattern differed by opponent, weather, or game time. As the mascot, I had strong professional interest in this question.
-</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Approach</h4>
-            <p>Combined play-by-play game data with decibel readings from stadium microphones across three seasons (~36 home games). Engineered features for score differential, down-and-distance, quarter, temperature, and opponent rank. Produced interactive Plotly dashboards that let non-technical staff filter by season and event type to explore crowd response patterns on their own.
-</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Results &amp; Impact</h4>
-            <p>Defensive turnovers produced the loudest average crowd response — louder even than touchdowns — especially when MSU was trailing. Walk-up music selections in the 3rd quarter showed a statistically significant effect on cheer volume for games decided by fewer than 10 points. The athletics team used these findings to redesign the third-quarter entertainment package for the following season. I was given extra treats for my contributions.
-</p>
-          </div>
-        </details>
-
-        <!-- Links to the GitHub repo and notebook -->
-        <div class="project-links">
-          
-          <a href="https://github.com/zeke-wonder-dog/spartan-cheer-analysis" target="_blank" rel="noopener" class="btn btn-repo">
-            View Repo
-          </a>
-          
-          
-          <a href="https://github.com/zeke-wonder-dog/spartan-cheer-analysis/blob/main/cheer_analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
-            View Notebook
-          </a>
-          
-        </div>
-      </div>
-
-    </article>
-    
-  </div>
-</section>
-
-<!-- ===== Contact section ===== -->
-<section id="contact" class="section contact-section">
-  <h2>Contact</h2>
-  <ul class="contact-list">
-    
-    <li>
-      <span class="contact-label">Email:</span>
-      <a href="mailto:chaud114@msu.edu">chaud114@msu.edu</a>
-    </li>
-    
-    
-    <li>
-      <span class="contact-label">LinkedIn:</span>
-      <a href="www.linkedin.com/in/megha-chaudhari-3802b0290" target="_blank" rel="noopener">www.linkedin.com/in/megha-chaudhari-3802b0290</a>
-    </li>
-    
-    
-    <li>
-      <span class="contact-label">GitHub:</span>
-      <a href="https://github.com/chaud114" target="_blank" rel="noopener">https://github.com/chaud114</a>
-    </li>
-    
-  </ul>
-</section>
-
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:chaud114@msu.edu">chaud114@msu.edu</a></li>
+        <li>GitHub: <a href="https://github.com/chaud114">github.com/chaud114</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/megha-chaudhari-3802b0290/">LinkedIn</a></li>
+      </ul>
+    </section>
 
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer class="site-footer">
-    <p>Built with the Data Science Portfolio Template &mdash; powered by Python &amp; Jinja2.</p>
+    <p>Data Science Portfolio — Megha Chaudhari</p>
   </footer>
 
 </body>
