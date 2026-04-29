@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Megha Chaudhari | Data Science Portfolio</title>
 
-  <!-- Base styles -->
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/themes/msu-dark.css" />
 </head>
@@ -31,13 +30,10 @@
     <!-- ===== About ===== -->
     <section id="about" class="section about-section">
       <h2>About Me</h2>
-      <div class="about-text">
-        <p>
-          I’m a data science student at Michigan State University who enjoys turning data into clear and simple insights.
-          I like working with Python, Pandas, and visualization tools to understand real-world problems.
-          My goal is to make complex data easy to understand and useful for decision making.
-        </p>
-      </div>
+      <p>
+        I am a data science student at Michigan State University. I enjoy working with Python,
+        data analysis, and building projects that turn data into simple insights.
+      </p>
     </section>
 
     <!-- ===== Projects ===== -->
@@ -46,24 +42,14 @@
 
       <div class="project-grid">
 
-        <!-- ===== AWS PROJECT ===== -->
+        <!-- ===== AWS Project ===== -->
         <article class="project-card">
-
-          <div class="project-image-wrapper">
-            <img
-              src="img/aws_project.png"
-              alt="AWS NYC 311 Data Pipeline Project"
-              class="project-image"
-            />
-          </div>
-
           <div class="project-body">
-
             <h3 class="project-title">AWS NYC 311 Data Pipeline & Analysis</h3>
 
             <p class="project-summary">
-              Built a cloud-based data pipeline using AWS to analyze NYC 311 complaint data.
-              Focused on cleaning data, storing it in S3, and analyzing resolution time patterns.
+              Built a cloud-based pipeline using AWS to process and analyze NYC 311 complaint data.
+              Focused on cleaning large datasets, storing data in S3, and finding trends in complaint types and resolution times.
             </p>
 
             <div class="tech-stack">
@@ -73,43 +59,57 @@
               <span class="tech-badge">Pandas</span>
             </div>
 
-            <details class="project-details">
-              <summary>More details</summary>
-
-              <div class="detail-block">
-                <h4>Problem</h4>
-                <p>
-                  NYC 311 receives many complaints daily and it is hard to understand resolution times and delays.
-                </p>
-              </div>
-
-              <div class="detail-block">
-                <h4>Approach</h4>
-                <p>
-                  Used AWS S3 for storage and Python for cleaning and analyzing large datasets.
-                </p>
-              </div>
-
-              <div class="detail-block">
-                <h4>Results</h4>
-                <p>
-                  Found clear differences in resolution time across agencies and complaint types.
-                </p>
-              </div>
-            </details>
-
             <div class="project-links">
-              <a href="https://github.com/chaud114/aws-nyc311-chaud114"
-                 target="_blank"
-                 class="btn btn-repo">
-                View Repo
-              </a>
+              <a href="https://github.com/chaud114/aws-nyc311-chaud114.git" target="_blank">View Repo</a>
             </div>
-
           </div>
         </article>
 
-        <!-- ===== ADD YOUR HOMEWORK PROJECTS HERE LATER ===== -->
+        <!-- ===== Homework 1 ===== -->
+        <article class="project-card">
+          <div class="project-body">
+            <h3 class="project-title">Homework 1: Project Professionalization</h3>
+
+            <p class="project-summary">
+              Improved a messy data science project by organizing files, setting up environments,
+              writing documentation, and adding Docker for reproducibility.
+            </p>
+
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">GitHub</span>
+              <span class="tech-badge">Data Science Workflow</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/chaud114/cmse492-hw01-chaud114.git" target="_blank">View Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Homework 2 ===== -->
+        <article class="project-card">
+          <div class="project-body">
+            <h3 class="project-title">Homework 2: SQL Analysis with Sakila</h3>
+
+            <p class="project-summary">
+              Performed SQL analysis using the Sakila database. Used joins, group by queries,
+              CTEs, and window functions to explore customer and rental behavior.
+            </p>
+
+            <div class="tech-stack">
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Docker</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/chaud114/cmse492-hw02-chaud114.git" target="_blank">View Repo</a>
+            </div>
+          </div>
+        </article>
 
       </div>
     </section>
@@ -117,18 +117,14 @@
     <!-- ===== Contact ===== -->
     <section id="contact" class="section contact-section">
       <h2>Contact</h2>
-
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:chaud114@msu.edu">chaud114@msu.edu</a></li>
-        <li>GitHub: <a href="https://github.com/chaud114">github.com/chaud114</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/megha-chaudhari-3802b0290/">LinkedIn</a></li>
-      </ul>
+      <p>Email: chaud114@msu.edu</p>
+      <p>GitHub: https://github.com/chaud114</p>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <p>Data Science Portfolio — Megha Chaudhari</p>
+    <p>Data Science Portfolio</p>
   </footer>
 
 </body>
